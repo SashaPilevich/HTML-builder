@@ -5,3 +5,6 @@ const readFile = fs.createReadStream(path.join(__dirname,'text.txt'),'utf-8')
 readFile.on('data', (chunk)=>{
   console.log(chunk)
 })
+
+//read with stdout
+readFile.on('data',data => stdout.write(data))
