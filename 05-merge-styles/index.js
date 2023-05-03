@@ -1,8 +1,8 @@
 const { createWriteStream, createReadStream, read } = require("node:fs");
 const fs = require("node:fs/promises");
 const { extname } = require("node:path");
-
 const path = require("path");
+
 const pathToStyles = path.join(__dirname,'styles')
 const pathToProject = path.join(__dirname,'project-dist')
 
